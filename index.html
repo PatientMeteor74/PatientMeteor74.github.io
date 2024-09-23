@@ -3,16 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Your Name - Personal Page</title>
+	<title>John Platkowski - Personal Page</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 	<style>
 		body, html {
 			height: 100%;
 			margin: 0;
-			font-family: Arial, sans-serif;
+			font-family: 'Roboto Mono', monospace;
 			color: #333;
 		}
 		body {
-			background-image: url('https://github.com/PatientMeteor74/PatientMeteor74.github.io/blob/main/signal-2024-09-22-202558_002.jpeg');
+			background-image: url('https://github.com/PatientMeteor74/PatientMeteor74.github.io/blob/main/signal-2024-09-22-202558_002.jpeg?raw=true');
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -20,15 +21,17 @@
 		.container {
 			display: flex;
 			height: 100%;
+			flex-direction: column;
+			justify-content: center;
 		}
 		.panel {
-			flex: 1;
-			background-color: rgba(255, 255, 255, 0.7);
-			backdrop-filter: blur(10px);
+			background-color: rgba(255, 255, 255, 0.8);
+			backdrop-filter: blur(5px);
 			padding: 20px;
-			margin: 10px;
+			margin: 10px auto;
 			border-radius: 10px;
-			overflow: auto;
+			max-width: 600px;
+			width: 90%;
 		}
 		h1 {
 			color: #2c3e50;
@@ -36,8 +39,8 @@
 			padding-bottom: 10px;
 		}
 		.description {
-			font-style: italic;
 			margin-bottom: 20px;
+			line-height: 1.6;
 		}
 		.links {
 			list-style-type: none;
@@ -63,17 +66,17 @@
 <body>
 	<div class="container">
 		<div class="panel">
-			<h1>Your Name</h1>
+			<h1>John Platkowski</h1>
 			<p class="description">
-				This is a space for your personal description. Write a brief introduction about yourself, your interests, or your professional background. Keep it concise and engaging!
+				I'm John Platkowski, a passionate developer and musician, among other interests. I'm currently studying CS at the University of Kansas as a Freshman. 
 			</p>
 		</div>
 		<div class="panel">
 			<h1>Links</h1>
 			<ul class="links">
-				<li><a href="#" target="_blank">Link 1</a></li>
-				<li><a href="#" target="_blank">Link 2</a></li>
-				<li><a href="#" target="_blank">Link 3</a></li>
+				<li><a href="#" target="_blank">Game Development Portfolio</a></li>
+				<li><a href="#" target="_blank">AI Projects</a></li>
+				<li><a href="#" target="_blank">Music Creations</a></li>
 			</ul>
 		</div>
 	</div>
