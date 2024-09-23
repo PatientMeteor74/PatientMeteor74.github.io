@@ -3,22 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>John Platkowski - Personal Page</title>
+	<title>Your Name - Personal Page</title>
 	<style>
-		body {
+		body, html {
+			height: 100%;
+			margin: 0;
 			font-family: Arial, sans-serif;
-			line-height: 1.6;
 			color: #333;
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 20px;
-			background-color: #f4f4f4;
+		}
+		body {
+			background-image: url('https://github.com/PatientMeteor74/PatientMeteor74.github.io/blob/main/signal-2024-09-22-202558_002.jpeg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 		.container {
-			background-color: white;
-			border-radius: 5px;
-			padding: 30px;
-			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			display: flex;
+			height: 100%;
+		}
+		.panel {
+			flex: 1;
+			background-color: rgba(255, 255, 255, 0.7);
+			backdrop-filter: blur(10px);
+			padding: 20px;
+			margin: 10px;
+			border-radius: 10px;
+			overflow: auto;
 		}
 		h1 {
 			color: #2c3e50;
@@ -52,15 +62,20 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Your Name</h1>
-		<p class="description">
-			This is a space for your personal description. Write a brief introduction about yourself, your interests, or your professional background. Keep it concise and engaging!
-		</p>
-		<ul class="links">
-			<li><a href="#" target="_blank">Link 1</a></li>
-			<li><a href="#" target="_blank">Link 2</a></li>
-			<li><a href="#" target="_blank">Link 3</a></li>
-		</ul>
+		<div class="panel">
+			<h1>Your Name</h1>
+			<p class="description">
+				This is a space for your personal description. Write a brief introduction about yourself, your interests, or your professional background. Keep it concise and engaging!
+			</p>
+		</div>
+		<div class="panel">
+			<h1>Links</h1>
+			<ul class="links">
+				<li><a href="#" target="_blank">Link 1</a></li>
+				<li><a href="#" target="_blank">Link 2</a></li>
+				<li><a href="#" target="_blank">Link 3</a></li>
+			</ul>
+		</div>
 	</div>
 </body>
 </html>
